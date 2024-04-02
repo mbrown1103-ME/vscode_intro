@@ -49,4 +49,39 @@ https://code.visualstudio.com/docs/setup/setup-overview
 
 - **Collaborative Coding**: Share your project with others and code together in real time.
 - Install the Live Share extension from the VS Code Marketplace, and start a session via the Live Share viewlet.
+## Creating your first VS Code workspace
+### What is a 'workspace'?
+In VS Code, a workspace is a collection of folders and files that you are working on, often related to a specific project or set of projects. Workspaces help organize, manage, and maintain context for your development tasks, including settings, extensions, and debug configurations, specific to that project or set of tasks.
+### Creating a workspace
+- Navigate to the main menu
+- Click open
+- Choose selected directory to make the workspace
+  
+https://github.com/mbrown1103-ME/vscode_intro/assets/155906837/c7616680-8c79-484d-bd72-2b86c53fd551
+
+### Navigating the workspace
+Navigating the workspace in VS Code is straightforward and efficient, allowing you to focus on your development tasks. Here's how to effectively move around and manage your workspace:
+
+- **Explorer View**: Accessible via the `View > Explorer` or by pressing `Ctrl+Shift+E` (Windows/Linux) or `Cmd+Shift+E` (macOS), this is your main hub for browsing files and folders within your workspace.
+<img width="1901" alt="Screenshot 2024-04-02 at 1 35 42 PM" src="https://github.com/mbrown1103-ME/vscode_intro/assets/155906837/61cfe0ff-07fe-436f-b82e-3f2dac48171a">
+
+- **Search**: Use the `View > Search` feature or press `Ctrl+F` (Windows/Linux) or `Cmd+F` (macOS) to quickly find files, symbols, or even specific text across your entire workspace.
+  <img width="1914" alt="Screenshot 2024-04-02 at 1 35 58 PM" src="https://github.com/mbrown1103-ME/vscode_intro/assets/155906837/7f10f3d0-17ba-4f25-b7f9-333571c402c6">
+
+- **Source Control**: The `View > SCM` option or `Ctrl+Shift+G` (Windows/Linux) or `Cmd+Shift+G` (macOS) shortcut opens the Source Control panel, where you can manage all your version control settings and changes.
+<img width="1908" alt="Screenshot 2024-04-02 at 1 36 29 PM" src="https://github.com/mbrown1103-ME/vscode_intro/assets/155906837/a3d8e695-1398-421f-a731-2c50b66c0218">
+
+- **Extensions**: Adding functionality to your workspace is easy through the `View > Extensions` or by using the `Ctrl+Shift+X` (Windows/Linux) or `Cmd+Shift+X` (macOS) shortcut. Here, you can browse, install, and manage extensions.
+<img width="1908" alt="Screenshot 2024-04-02 at 1 55 20 PM" src="https://github.com/mbrown1103-ME/vscode_intro/assets/155906837/65fb55c4-ed7b-4b24-935a-a16b86001b4b">
+
+- **Multi-root Workspaces**: For working with multiple projects, you can add folders to your workspace by selecting `File > Add Folder to Workspace...`. This allows you to group and manage related projects under a single workspace window.
+
+- **Tabs and Split View**: Organize open files into tabs for easy access. Split your editor (`View > Editor Layout > Split Up/Down/Left/Right`) to work on multiple files side by side.
+<img width="1912" alt="Screenshot 2024-04-02 at 1 56 42 PM" src="https://github.com/mbrown1103-ME/vscode_intro/assets/155906837/e3dfa0e6-2d8d-47c9-b8d4-da5b33360cf2">
+
+- **Terminal and Debug Panels**: Access the integrated terminal via `` Ctrl+` `` (Windows/Linux) or `` Cmd+` `` (macOS) and the Debug panel through `View > Debug` or `Ctrl+Shift+D` (Windows/Linux) or `Cmd+Shift+D` (macOS) to execute commands and debug your application directly within VS Code.
+<img width="1917" alt="Screenshot 2024-04-02 at 1 36 46 PM" src="https://github.com/mbrown1103-ME/vscode_intro/assets/155906837/75ce1e35-34c1-4c5e-9e0f-89b13e958704">
+
+### 
+
 
