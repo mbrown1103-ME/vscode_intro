@@ -273,7 +273,11 @@ Here are some recommended and essential extensions for various development needs
 
 ### Community and Resources
 
-The VS Code community is vibrant and supportive, offering a wealth of resources for learning and troubleshooting:
+#### VS Code Cheat Sheet
+
+<img width="1050" alt="Screenshot 2024-04-02 at 4 23 12 PM" src="https://github.com/mbrown1103-ME/vscode_intro/assets/155906837/6c99138d-6a1a-40d4-beb5-c5eeb780d387">
+
+<img width="1054" alt="Screenshot 2024-04-02 at 4 23 47 PM" src="https://github.com/mbrown1103-ME/vscode_intro/assets/155906837/77785c35-c8d8-4763-b989-d23c74ed67c4">
 
 #### Official Documentation
 
