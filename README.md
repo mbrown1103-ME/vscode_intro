@@ -82,6 +82,30 @@ Navigating the workspace in VS Code is straightforward and efficient, allowing y
 - **Terminal and Debug Panels**: Access the integrated terminal via `` Ctrl+` `` (Windows/Linux) or `` Cmd+` `` (macOS) and the Debug panel through `View > Debug` or `Ctrl+Shift+D` (Windows/Linux) or `Cmd+Shift+D` (macOS) to execute commands and debug your application directly within VS Code.
 <img width="1917" alt="Screenshot 2024-04-02 at 1 36 46 PM" src="https://github.com/mbrown1103-ME/vscode_intro/assets/155906837/75ce1e35-34c1-4c5e-9e0f-89b13e958704">
 
-### 
+### Customizing and configuring VS Code to work for you (Tips)
+#### Install language specific extensions to expand intellisense coverage
+VS Code comes equipped with built-in IntelliSense support for a core set of languages, including JavaScript, TypeScript, JSON, HTML, CSS, and SCSS. This feature significantly enhances your coding efficiency by providing smart completions and insights directly out of the box. For those working in languages beyond this core set, expanding VS Code's IntelliSense capabilities is as simple as installing language-specific extensions. This flexibility ensures that VS Code's powerful code comprehension and assistance features can be tailored to virtually any programming language.
+#### Enable Autosave (thank me later)
+VS Code's AutoSave feature automatically saves your changes to your files after a delay, ensuring you never lose your work due to an unexpected interruption.
+How to enable: `file < auto-save`.
+### Basic Editing
+
+Mastering basic editing in VS Code can significantly streamline your coding workflow. Here are some essential techniques and shortcuts:
+
+- **Highlighting**: Click and drag your mouse over the text, or hold `Shift` and use the arrow keys to select text. For column (box) selection, hold `Shift+Alt` while dragging the mouse, or `Shift+Alt+Arrow Keys`.
+
+- **Cut, Copy, and Paste**: Use the familiar `Ctrl+X` (Cut), `Ctrl+C` (Copy), and `Ctrl+V` (Paste) shortcuts (Windows/Linux), or `Cmd+X`, `Cmd+C`, and `Cmd+V` (macOS).
+
+- **Undo and Redo**: Quickly revert or reapply changes with `Ctrl+Z` for Undo and `Ctrl+Y` or `Ctrl+Shift+Z` for Redo (Windows/Linux), or `Cmd+Z` and `Cmd+Shift+Z` (macOS).
+
+- **Find and Replace**: Open the Find panel with `Ctrl+F` and the Replace panel with `Ctrl+H` (Windows/Linux), or `Cmd+F` and `Cmd+Alt+F` (macOS), to search and replace text within the current file.
+
+- **Line Manipulation**: Move lines up or down with `Alt+Up` or `Alt+Down`, and duplicate lines with `Shift+Alt+Down` or `Shift+Alt+Up` (Windows/Linux), or `Option+Up`/`Option+Down` and `Shift+Option+Down`/`Shift+Option+Up` (macOS).
+
+- **Code Folding**: Collapse or expand sections of code using the folding controls next to the line numbers or through `Ctrl+Shift+[` to fold and `Ctrl+Shift+]` to unfold (Windows/Linux), or `Cmd+Option+[` and `Cmd+Option+]` (macOS).
+
+- **Commenting Code**: Quickly comment or uncomment lines or blocks of code with `Ctrl+/` for line comments and `Shift+Alt+A` for block comments (Windows/Linux), or `Cmd+/` and `Shift+Option+A` (macOS).
+
+Embracing these editing basics will enhance your efficiency, allowing you to focus more on coding and less on navigating through your editor.
 
 
