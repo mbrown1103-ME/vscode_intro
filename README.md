@@ -108,4 +108,113 @@ Mastering basic editing in VS Code can significantly streamline your coding work
 
 Embracing these editing basics will enhance your efficiency, allowing you to focus more on coding and less on navigating through your editor.
 
+### Debugging
+
+Mastering basic debugging in VS Code can significantly enhance your problem-solving skills. Let's use a simple Python script that attempts to calculate the factorial of a number but contains some errors. We'll walk through how to set up and use the debugger to identify and fix these issues.
+
+#### Example Python Script
+
+```python
+def factorial(n):
+    if n < 0:
+        return "Error: Negative number"
+    elif n == 1:
+        return 1
+    else:
+        return n * factorial(n)
+
+print(factorial(5))
+```
+#### Setting up your debugger
+1. Create a .vscode folder in your project root if it doesn't already exist.
+2. Add a launch.json file inside the .vscode folder.
+3. Configure your Python debugging settings by adding the following configuration to launch.json:
+
+```
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        }
+    ]
+}
+```
+**NOTE**: You can also just boot up the debugger and it will open up an option for you to choose the runtime for the debugger and it will create the launch.json for you
+
+#### Debugger Commands
+
+Below is a summary of key debugging actions in VS Code and their explanations:
+
+| Action        | Shortcut | Explanation |
+|---------------|:--------:|-------------|
+| **Continue / Pause** | `F5` | **Continue**: Resume normal program/script execution (up to the next breakpoint).<br>**Pause**: Inspect code executing at the current line and debug line-by-line. |
+| **Step Over**  | `F10`   | Execute the next line or method as a single command without inspecting or following its component steps. |
+| **Step Into**  | `F11`   | Enter the next function or method to follow its execution line-by-line. |
+| **Step Out**   | `⇧F11`  | When inside a function or method, return to the earlier execution context by completing the remaining lines of the current function as though it were a single command. |
+| **Restart**    | `⇧⌘F5` | Terminate the current program execution and start debugging again using the current run configuration. |
+| **Stop**       | `⇧F5`   | Terminate the current program execution. |
+
+These commands are essential for effectively navigating and understanding the flow of your program during debugging sessions.
+
+#### Debugging the Script
+
+- **Set a Breakpoint**: Click to the left of the line number where you wish to halt execution. For this example, placing a breakpoint at the beginning of the `factorial` function is advisable.
+- **Start Debugging**: Press `F5` or click the green play button in the Debugging panel to begin the debugging session.
+- **Inspect Variables**: When the execution pauses at a breakpoint, hover over variables to view their current values. In this case, examine the value of `n` during the recursive calls.
+- **Step Through Code**: Navigate through your code using the step-over (`F10`), step-into (`F11`), and step-out (`Shift+F11`) commands.
+- **Identify the Errors**: Observe that the recursive call fails to decrement `n`, leading to infinite recursion for `n > 1`. Additionally, the base case for `n == 0` is absent.
+
+#### Fixing the Script
+
+To rectify the script, adjust the recursive call to decrement `n` and introduce a base case for `n == 0`:
+
+```python
+def factorial(n):
+    if n < 0:
+        return "Error: Negative number"
+    elif n == 0 or n == 1:  # Added base case for n == 0
+        return 1
+    else:
+        return n * factorial(n - 1)  # Corrected recursive call
+```
+
+### Version Control Integration with Git in VS Code
+
+VS Code provides seamless integration with Git, a distributed version control system, enabling developers to efficiently manage changes to their codebase. This integration supports a wide range of Git operations directly within the VS Code interface, including committing changes, branching, and merging. Here’s how to leverage these features:
+
+#### Committing Changes
+
+1. **Stage Changes**: In the Source Control panel, select the files you want to commit and click the "+" button to stage them. Alternatively, you can stage all changes by clicking the "Stage All Changes" button.
+2. **Commit Staged Changes**: Once changes are staged, type a commit message in the message box and press `Ctrl+Enter` (Windows/Linux) or `Cmd+Enter` (macOS) to commit them. Ensure your commit message is descriptive of the changes made.
+
+#### Branching
+
+1. **Create a New Branch**: Access the branch management features by clicking on the branch name in the bottom left corner of the status bar. Select "Create new branch..." and enter a name for your branch.
+2. **Switch Branches**: To switch between branches, click on the branch name in the status bar and select the branch you wish to check out.
+
+#### Merging
+
+1. **Merge Branches**: To merge changes from one branch into another, first switch to the target branch you want to merge into. Then, open the Command Palette with `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (macOS) and type "Git: Merge Branch...". Select the branch you want to merge from the list.
+
+#### Resolving Merge Conflicts
+
+1. **Identify Conflicts**: During a merge, conflicts may arise. VS Code will highlight these conflicts in the editor.
+2. **Resolve Conflicts**: Edit the files to resolve the conflicts, choosing which changes to keep. Use the "Accept Current Change", "Accept Incoming Change", "Accept Both Changes", or "Compare Changes" options as needed.
+3. **Finalize the Merge**: After resolving all conflicts, stage the resolved files and commit the merge. VS Code may automatically commit the merge if all conflicts are resolved through the editor.
+
+#### Viewing History and Reverting Changes
+
+- **View Commit History**: Open the Command Palette and select "Git: View History" to see a log of commits. You can explore changes made in each commit.
+- **Revert Changes**: To revert changes made by a commit, right-click on the commit in the history log and select "Revert Commit" or "Reset Current Branch to Here" for more drastic rollbacks.
+
+#### Git Integration Preferences
+
+Customize your Git experience in VS Code by adjusting settings related to Git operations, such as enabling automatic fetching, configuring commit signing, and more through the settings menu (`File > Preferences > Settings`, then search for "Git").
+
+By integrating Git directly into the development environment, VS Code makes version control more accessible and streamlined, allowing developers to focus more on coding and less on command-line operations.
 
