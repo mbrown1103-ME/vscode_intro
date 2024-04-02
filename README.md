@@ -1,4 +1,4 @@
-# Intro to VS Code
+# Intro to VS Code (Roux Learner Lab)
 Dive into the world of efficient coding with our upcoming VS Code workshop, tailored specifically for align students looking to streamline their development process. Learn how to customize your coding environment with powerful extensions, debug with ease, and collaborate in real-time with your peers, all within one of the most popular code editors available today.
 # Why VS Code?
 VS Code has become a pivotal tool in today's programming environment due to its versatility, efficiency, and broad support for programming languages and development tools. It bridges the gap between a lightweight text editor and a full-fledged Integrated Development Environment (IDE), providing developers with a highly customizable platform that can be tailored to fit almost any development workflow. With its extensive library of extensions, it allows programmers to add just about any functionality they need, from language-specific syntax highlighting and code completion to advanced debugging and version control integration.
@@ -145,6 +145,8 @@ print(factorial(5))
 }
 ```
 **NOTE**: You can also just boot up the debugger and it will open up an option for you to choose the runtime for the debugger and it will create the launch.json for you
+**EXTRA-NOTE**: You can create global launch configerations for debugging so you do not have to do so for each new workspace: ```code < settings < user < debug```
+<img width="1899" alt="Screenshot 2024-04-02 at 3 48 48 PM" src="https://github.com/mbrown1103-ME/vscode_intro/assets/155906837/999d508a-7675-4216-82d5-d6020173c4a1">
 
 #### Debugger Commands
 
@@ -218,3 +220,69 @@ Customize your Git experience in VS Code by adjusting settings related to Git op
 
 By integrating Git directly into the development environment, VS Code makes version control more accessible and streamlined, allowing developers to focus more on coding and less on command-line operations.
 
+### Live Share: Real-Time Collaborative Coding in VS Code
+
+The Live Share extension for VS Code revolutionizes the way developers collaborate on code by allowing for real-time, interactive programming sessions across different machines and environments. This powerful tool supports a wide range of collaborative activities, from pair programming to large group code reviews, making remote collaboration seamless and efficient.
+
+#### Getting Started with Live Share
+
+1. **Install Live Share**: First, ensure you have the Live Share extension installed. You can find it by searching for "Live Share" in the Extensions view (`Ctrl+Shift+X` or `Cmd+Shift+X` on macOS) and clicking **Install**.
+
+2. **Start a Session**: Once installed, you can start a Live Share session by clicking on the Live Share icon in the status bar or by opening the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on macOS) and selecting **Live Share: Start Collaboration Session**.
+
+3. **Invite Collaborators**: After starting a session, Live Share generates a unique link that you can share with your collaborators. They can join your session by clicking on the link, which will open the shared project in their own VS Code environment.
+
+#### Features of Live Share
+
+- **Real-Time Editing and Debugging**: Participants can edit and debug code together in real time, with changes reflected across all participants' screens instantly.
+- **Independent Navigation**: While you're collaboratively working on the same project, each participant can navigate the codebase independently, allowing for efficient multitasking.
+- **Integrated Chat and Audio Calls**: Communicate directly within the session through the integrated chat or start an audio call to discuss the code verbally, facilitating clear and immediate communication.
+- **Shared Terminals and Servers**: Share terminals and local servers with your collaborators, enabling them to run and test the code as if they were on the same machine.
+
+#### Best Practices for Using Live Share
+
+- **Code Together Efficiently**: Use Live Share for pair programming sessions, code reviews, or troubleshooting sessions to take advantage of multiple perspectives.
+- **Maintain Communication**: Leverage the chat and audio call features to keep communication open and clear among participants, ensuring everyone is aligned on the task at hand.
+- **Respect Privacy and Security**: Only share sessions with trusted collaborators and be mindful of sharing sensitive information during a Live Share session.
+
+Live Share in VS Code breaks down geographical barriers and brings developers together in a shared coding environment. Whether you're working on a project with a distributed team, helping a student understand a concept, or troubleshooting code with a colleague, Live Share makes collaborative coding more accessible and interactive than ever before.
+### Recommended Extensions for VS Code
+- HTML Boilerplate
+
+### Customization Tips
+
+VS Code offers extensive customization options to tailor your development environment to your needs. Here are some ways to customize your workspace:
+
+#### Customizing Settings
+
+- **User and Workspace Settings**: Access settings by going to `File > Preferences > Settings` or using `Ctrl+,` (`Cmd+,` on macOS). You can customize everything from the theme, font size, and keybindings to editor behavior and code formatting options.
+
+- **Themes**: Personalize your editor with themes by going to `File > Preferences > Color Theme`. VS Code offers a variety of built-in themes, and you can install more from the Extensions Marketplace.
+
+- **Keybindings**: Customize keybindings by opening `File > Preferences > Keyboard Shortcuts`. You can modify existing shortcuts and add new ones to fit your workflow.
+
+#### Extensions for Enhanced Functionality
+
+Enhance your development environment with extensions. Here are some recommended and essential extensions for various development needs:
+
+- **${chosenProgrammingLanguage}**: Provides rich support for the given language, including features like IntelliSense, linting, debugging, and more.
+- **Live Share**: Enables real-time collaborative editing and debugging with teammates.
+- **GitLens**: Supercharges the built-in Git capabilities, providing an enhanced visual representation of code authorship and history.
+- **Prettier**: A code formatter that supports multiple languages and integrates with VS Code, ensuring consistent code style.
+- **ESLint**: Integrates ESLint JavaScript into VS Code, helping to find and fix problems in your JavaScript code.
+- **Remote - SSH**: Open any folder on a remote machine using SSH and take advantage of VS Code's full feature set.
+- **HTML Boilerplate**: Create html boilerplate with ease.
+
+### Community and Resources
+
+The VS Code community is vibrant and supportive, offering a wealth of resources for learning and troubleshooting:
+
+#### Official Documentation
+
+- **[VS Code Docs](https://code.visualstudio.com/docs)**: The official documentation is a comprehensive resource covering everything from basic usage to advanced features (HIGHLY recommend looking at this).
+
+#### Tutorials and Guides
+
+- **[VS Code YouTube Channel](https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA)**: Offers tutorials and updates on new features.
+- **[Codecademy](https://www.codecademy.com/)**: Provides courses that integrate with VS Code, offering hands-on learning.
+- **[FreeCodeCamp](https://www.freecodecamp.org/)**: A great source for tutorials that include working with VS Code for web development.
