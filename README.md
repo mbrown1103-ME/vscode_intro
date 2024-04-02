@@ -246,8 +246,6 @@ The Live Share extension for VS Code revolutionizes the way developers collabora
 - **Respect Privacy and Security**: Only share sessions with trusted collaborators and be mindful of sharing sensitive information during a Live Share session.
 
 Live Share in VS Code breaks down geographical barriers and brings developers together in a shared coding environment. Whether you're working on a project with a distributed team, helping a student understand a concept, or troubleshooting code with a colleague, Live Share makes collaborative coding more accessible and interactive than ever before.
-### Recommended Extensions for VS Code
-- HTML Boilerplate
 
 ### Customization Tips
 
@@ -261,9 +259,9 @@ VS Code offers extensive customization options to tailor your development enviro
 
 - **Keybindings**: Customize keybindings by opening `File > Preferences > Keyboard Shortcuts`. You can modify existing shortcuts and add new ones to fit your workflow.
 
-#### Extensions for Enhanced Functionality
+### Recommended Extensions
 
-Enhance your development environment with extensions. Here are some recommended and essential extensions for various development needs:
+Here are some recommended and essential extensions for various development needs:
 
 - **${chosenProgrammingLanguage}**: Provides rich support for the given language, including features like IntelliSense, linting, debugging, and more.
 - **Live Share**: Enables real-time collaborative editing and debugging with teammates.
